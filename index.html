@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>20190599 이승호의 자기소개서</title>
+    <meta
+      name="description"
+      content="Portfolio for world-renowned enginner Ellie"
+    />
+    <meta name="author" content="Ginam" />
+    <link rel="icon" type="image/png" href="#" />
+    <script
+      src="https://kit.fontawesome.com/fc02acd8ed.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="main.js" defer></script>
+  </head>
+
+  <body>
+    <!--Navbar-->
+    <nav id="navbar">
+      <div class="navbar__logo">
+        <i class="fas fa-frog"></i>
+        <a href="#">이승호</a>
+      </div>
+      <ul class="navbar__menu">
+        <li class="navbar__menu__item" data-link="#Introduce">자기소개</li>
+        <li class="navbar__menu__item" data-link="#studys">공부과목</li>
+        <li class="navbar__menu__item" data-link="#portfolio">포트폴리오</li>
+        <li class="navbar__menu__item" data-link="#skills">나의기술</li>
+        <li class="navbar__menu__item" data-link="#contact">연락처</li>
+      </ul>
+      <button class="navbar__toggle-btn">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <!--Introduce-->
+    <section id="Introduce"class="section">
+      <div class="Intro__container">
+        <img
+          src="/imgs/KakaoTalk_20240617_003023684.jpg"
+          alt="상장"
+          class="Intro__avatar"
+        />
+        <h2 class="Intro__title">안녕하십니까!<br />오늘도 좋은 하루 입니다.</h2>
+        <h3 class="Intro__description">미래의 백엔드 개발자가 되고싶은 이승호 입니다.</h3>
+        <button class="Intro__contact">Contact Me</button>
+      </div>
+    </section>
+    <section id="studys" class="section">
+      <h1>희망직무</h1>
+      <div class="studys">
+        <div class="study">
+          <div class="study__icon">
+            <i class="fas fa-database"></i>
+          </div>
+          <div class="study__description">
+            <p>
+              <span style="color: red">Back-end 개발자</span>(DB, API, <mark>JAVA기반</mark>)로서 기술적 도전과 성장을 이루고 싶습니다. 백엔드 개발은 데이터베이스 관리, 서버 로직 구현, API 설계 등 다양한 기술적 도전을 제공하여, 문제 해결 능력을 향상시키고 성취감을 느낄 수 있습니다.
+            </p>
+          </div>
+        </div>
+        <div class="study">
+          <div class="study__icon">
+            <i class="fas fa-server"></i>
+          </div>
+          <div class="study__description">
+            <p>
+              <span style="color: red">시스템 안정성과 성능 최적화</span>에 기여하고 싶습니다. 백엔드 개발은 애플리케이션의 안정성과 성능을 책임지며, 효율적인 코드 작성과 시스템 최적화를 통해 사용자에게 안정적이고 빠른 서비스를 제공하는 것을 목표로 합니다.
+            </p>
+          </div>
+        </div>
+        <div class="study">
+          <div class="study__icon">
+            <i class="fas fa-cogs"></i>
+          </div>
+          <div class="study__description">
+            <p>
+              <span style="color: red">데이터 처리와 분석</span>에 흥미가 있습니다. 데이터베이스 설계와 데이터 처리, 분석을 통해 데이터의 가치를 극대화하고, 이를 통해 비즈니스 인사이트를 제공하며 백엔드 개발의 매력을 느끼고 있습니다.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+<!-- Portfolio -->
+<section id="portfolio" class="section">
+  <div class="section__container">
+    <h1>프로젝트</h1>
+    <h3>이미지 클릭 시 링크로 이동합니다.</h3>
+    <div class="Portfolio__categories">
+      <button class="category__btn selected" data-filter="*">
+        All<span class="category__count">5</span>
+      </button>
+      <button class="category__btn" data-filter="Front-end">
+        Front-end<span class="category__count">1</span>
+      </button>
+      <button class="category__btn" data-filter="Back-end">
+        Back-end<span class="category__count">2</span>
+      </button>
+      <button class="category__btn" data-filter="Mobile">
+        Mobile<span class="category__count">1</span>
+      </button>
+      <button class="category__btn" data-filter="향후 예정">
+        개발예정<span class="category__count">1</span>
+      </button>
+    </div>
+
+    <table class="Portfolio__table">
+      <thead>
+        <tr>
+          <th>Project</th>
+          <th>Description</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="project" data-type="Front-end">
+          <td>
+            <a href="https://github.com/Hannam-CapStone-2024/DisabilityCrimeNavigator" class="project__link">
+              <img src="imgs\KakaoTalk_20240617_023008391.jpg" alt="Project Image" class="project__img" />
+            </a>
+          </td>
+          <td>
+            <div class="project__description">
+              <h3>프론트엔드 웹 프로젝트</h3>
+              <p>
+                프론트엔드 웹 프로젝트인 범죄 회피 장애인 네비게이션 웹 버전은 장애인들이 도로를 안전하게 이용할 수 있도록 설계된 애플리케이션입니다. 사용자는 실시간으로 업데이트되는 범죄 데이터를 기반으로 안전한 경로를 선택할 수 있습니다. 네비게이션 기능은 일부 문제가 발생하고 있지만, 마커 추가 및 API 연결 기능은 원활히 작동하여 사용자에게 정확한 정보를 제공합니다. 이 프로젝트는 사회적 약자의 보호와 안전을 증진하기 위한 목적으로 개발되었습니다.</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="project" data-type="Back-end">
+          <td>
+            <a href="https://github.com/Kimginam97/Board" class="project__link">
+              <img src="imgs\KakaoTalk_20240617_023008391_02.jpg" alt="Project Image" class="project__img" />
+            </a>
+          </td>
+          <td>
+            <div class="project__description">
+              <h3>백엔드 웹 프로젝트(해커톤대회-멋쟁이사자처럼)</h3>
+              <p>멋쟁이사자처럼 프로그램에서 진행한 노인 건강 웹 프로젝트는 백엔드 개발에 중점을 두었습니다. 사용자가 건강 관리를 위해 필요한 정보와 리소스를 제공하며, 주요 기능으로는 사용자 맞춤형 건강 정보 추천 시스템과 건강 상태 모니터링 기능을 포함합니다. 백엔드는 데이터베이스 관리, API 연동 및 데이터 분석을 통해 사용자에게 정확하고 신속한 서비스를 제공하며, 노인들의 건강 증진에 기여하는데 목적을 두고 있습니다.</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="project" data-type="Back-end">
+          <td>
+            <a href="https://github.com/leeseungho55/likelion_BackEnd" class="project__link">
+              <img src="imgs\KakaoTalk_20240617_023008391_03.jpg" alt="Project Image" class="project__img" />
+            </a>
+          </td>
+          <td>
+            <div class="project__description">
+              <h3>백엔드 웹 프로젝트(해커톤대회-멋쟁이사자처럼2)</h3>
+              <p>
+                멋쟁이사자처럼 운영진들이 세종의 해커톤 대회에서 개발한 농촌봉사 플랫폼 백엔드는 농촌 지역과 봉사자를 연결하는 주요 기능을 가지고 있습니다. 이 플랫폼은 농업 환경에서 필요한 봉사자와 자원봉사를 지원하며, 백엔드 개발은 데이터 관리와 봉사자-농촌 사이의 원활한 소통을 위한 API 설계에 중점을 두었습니다. 사용자들은 편리하게 봉사 기회를 찾고 등록할 수 있으며, 농촌 사회 발전에 기여하는 플랫폼을 제공합니다.</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="project" data-type="Mobile">
+          <td>
+            <a href="https://github.com/Hannam-CapStone-2024/CrimeCrime" class="project__link">
+              <img src="imgs\KakaoTalk_20240617_023008391_01.jpg" alt="Project Image" class="project__img" />
+            </a>
+          </td>
+          <td>
+            <div class="project__description">
+              <h3>모바일 프로젝트</h3>
+              <p>이 안드로이드 앱은 장애인을 위한 범죄 회피 네비게이션으로, 실시간 범죄 데이터를 기반으로 사용자의 안전을 최우선으로 합니다. 앱은 사용자가 안전한 경로를 선택할 수 있도록 실시간으로 위험 지역을 식별하고 경고합니다. 사용자가 위험 지역에 접근할 때는 진동과 경고 알림을 통해 경각심을 높이며, 긴급 상황 발생 시 위치 기반으로 긴급 전화를 즉시 호출할 수 있습니다. 이를 통해 장애인의 안전한 이동을 돕고 사회적 포용성을 증대시킵니다.</p>
+            </div>
+          </td>
+        </tr>
+        <tr class="project" data-type="향후 예정">
+          <td>
+            <a href="https://github.com/Kimginam97/FutureProject" class="project__link">
+              <img src="imgs/github.png" alt="Project Image" class="project__img" />
+            </a>
+          </td>
+          <td>
+            <div class="project__description">
+              <h3>향후 예정 프로젝트(지능형 도시 교통 관리 시스템)</h3>
+              <p>향후 예정 프로젝트로는 지능형 도시 교통 관리 시스템을 개발하는 것입니다. 이 시스템은 실시간 교통 데이터 수집과 분석을 통해 도로 혼잡도를 예측하고, 최적 경로를 제안하여 교통 흐름을 최적화합니다. 또한, 차량간 통신 기술을 활용하여 사고 예방 및 신속한 대응을 가능하게 하며, 환경에 미치는 영향을 최소화하는 친환경 교통 인프라를 구축하는 것을 목표로 합니다..</p>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+
+
+    <!-- Myskil -->
+    <Section id="skills" class="section">
+    <div class="section__container">
+      <h1>나의기술</h1>
+      <h2>HTML / CSS / JS / JAVA / JSP / SPRING</h2>
+      <p>현재 여러 프로젝트를 진행하고 있으며, 아래는 현재 사용하는 언어의 빈도수 입니다.</p>
+  
+      <div class="skillset">
+        <div class="skillset__left">
+          <div class="skillset_title">기술</div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>HTML</span>
+                <span>기초 기반의 개발은 가능합니다.</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value" style="width: 45%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>CSS</span>
+                <span>개발경험을 토대로 Document 없이도 사용할 수 있습니다.</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value"style="width: 87%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>JS</span>
+                <span>기초 프로젝트 수준의 코딩은 가능합니다.</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value"style="width: 52%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>JAVA</span>
+                <span>백준 골드1 수준의 코딩은 가능합니다.</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value"style="width: 91%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>JSP</span>
+                <span>이전 경험의토대로 오류 분석 및 개선은 가능합니다.</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value"style="width: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill_description">
+                <span>SPRING</span>
+                <span>잘 사용합니다.</span>
+              </div>
+              <div class="skill__bar">
+                <div class="skill__value"style="width: 71%;"></div>
+              </div>
+            </div>
+        </div>
+        <div class="skillset__right">
+          <div class="tools">
+            <div class="skillset_title">개발도구</div>
+            <ul class="tolls__list">
+              <li><span>Visual Studio</span></li>
+              <li><span>Visual Studio Code</span></li>
+              <li><span>IntelliJ</span></li>
+              <li><span>Oracle</span></li> 
+              <li><span>  </span></li>
+              <li><span> </span></li>
+              
+            </ul>
+          </div>
+          <div class="etc">
+            <div class="skillset_title">개발 Tool</div>
+            <ul class="ect__list">
+              <li><span>Git</span></li>
+            </ul>
+          </div>
+  
+        </div>
+      </div>
+    </div>
+    
+
+    </Section> 
+     <!-- Contact -->
+     <section id="contact" class="section">
+      <h1 class="contact__title">필요시 문의 바랍니당.</h1>
+      <h2 class="contact__email">leeseungho1231@naver.com</h2>
+      <div class="contact__links">
+          <a href="https://github.com/leeseungho55"
+              targe="_blank">
+              <i class="fab fa-github"></i>
+          </a>
+      </div>
+      <p class="thankstomuch">읽어주셔서 감사합니다. 20190599 이승호 였습니다.</p>
+  </section>
+
+  <!-- Arrow Up -->
+  <button class="arrow-up">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  </body>
+</html>
